@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ciudadanía Digital | Entrenamiento en la era digital</title>
+<style>
+:root{--bg:#0b0e0d;--panel:#141a17;--panel2:#1b241f;--lime:#c7f36b;--text:#f3f5f1;--muted:#aab5ad;--line:#2b3830}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 Arial,Helvetica,sans-serif}
+header{position:sticky;top:0;z-index:10;background:#0b0e0deF;border-bottom:1px solid var(--line);backdrop-filter:blur(10px)}
+nav{max-width:1100px;margin:auto;padding:12px 22px;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.brand{font-weight:800;letter-spacing:.08em;margin-right:auto}.brand span{color:var(--lime)}
+nav a{color:var(--muted);text-decoration:none;font-size:.9rem;padding:7px 10px;border-radius:20px}nav a:hover,nav a.active{background:var(--panel2);color:var(--lime)}
+main{max-width:1100px;margin:auto;padding:0 22px}
+.hero{min-height:590px;display:grid;align-items:center;grid-template-columns:1.2fr .8fr;gap:38px;padding:70px 0}
+.eyebrow{color:var(--lime);font-weight:700;letter-spacing:.16em;text-transform:uppercase;font-size:.78rem}
+h1{font-size:clamp(2.6rem,6vw,5.3rem);line-height:.98;letter-spacing:-.05em;margin:18px 0}h1 em{font-style:normal;color:var(--lime)}
+.lead{font-size:1.15rem;color:var(--muted);max-width:650px}
+.hero-card{background:linear-gradient(145deg,#1d2921,#101512);border:1px solid var(--line);border-radius:24px;padding:28px;min-height:300px;display:flex;flex-direction:column;justify-content:space-between}
+.stat{font-size:4rem;font-weight:900;color:var(--lime);line-height:1}
+.tag{display:inline-block;border:1px solid #536c39;color:var(--lime);border-radius:30px;padding:6px 12px;font-size:.8rem}
+section{padding:65px 0;border-top:1px solid var(--line);scroll-margin-top:80px}
+.kicker{color:var(--lime);font-size:.78rem;font-weight:800;letter-spacing:.15em;text-transform:uppercase}
+h2{font-size:clamp(2rem,4vw,3.2rem);line-height:1.05;margin:10px 0 18px;letter-spacing:-.03em}
+h3{margin:0 0 8px;font-size:1.25rem}.muted{color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:23px}
+.card p{color:var(--muted);margin-bottom:0}.number{font-size:2rem;font-weight:900;color:var(--lime);margin-bottom:8px}
+.pills{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0}.pill{background:var(--panel2);border:1px solid var(--line);border-radius:30px;padding:7px 12px;color:var(--muted);font-size:.88rem}
+.callout{border-left:3px solid var(--lime);background:#151d17;padding:18px 22px;border-radius:0 14px 14px 0;color:var(--muted);margin-top:20px}
+.activity-tabs{display:flex;gap:10px;flex-wrap:wrap;margin:20px 0}
+button{cursor:pointer;border:1px solid var(--line);background:var(--panel);color:var(--text);padding:12px 16px;border-radius:30px;font-weight:700}
+button.selected,button:hover{background:var(--lime);color:#111;border-color:var(--lime)}
+.activity{display:none}.activity.show{display:block}
+ul{padding-left:20px;color:var(--muted)}li{margin:7px 0}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:18px}
+.step{padding:18px;background:var(--panel2);border-radius:14px;border:1px solid var(--line)}
+.step b{display:block;color:var(--lime);margin-bottom:6px}
+video{width:100%;border-radius:16px;border:1px solid var(--line);background:#000;max-height:520px}
+.note{font-size:.88rem;color:var(--muted)}
+details{background:var(--panel);border:1px solid var(--line);padding:16px 18px;border-radius:14px;margin:10px 0}
+summary{cursor:pointer;font-weight:700}details p{color:var(--muted)}
+footer{padding:35px 22px;text-align:center;color:var(--muted);border-top:1px solid var(--line)}
+@media(max-width:760px){.hero{grid-template-columns:1fr;padding:48px 0}.grid,.steps{grid-template-columns:1fr}.hero-card{min-height:220px}nav{gap:4px}nav a{font-size:.78rem;padding:6px 8px}}
+</style>
+</head>
+<body>
+<header><nav>
+<div class="brand">CD<span> / </span>DEPORTE</div>
+<a href="#inicio">Inicio</a><a href="#tema">Tema</a><a href="#grupos">Grupos</a><a href="#actividades">Actividades</a><a href="#registro">Registro</a><a href="#reflexion">Reflexión</a>
+</nav></header>
+<main>
+<section class="hero" id="inicio" style="border:0">
+<div>
+<div class="eyebrow">Proyecto integrador · Crédito de Ciudadanía Digital</div>
+<h1>El entrenamiento<br>en la <em>era digital</em></h1>
+<p class="lead">Desinformación en redes sociales y su impacto en las prácticas de entrenamiento deportivo.</p>
+<div class="pills"><span class="tag">Juan Ignacio Ojeda</span><span class="pill">Ámbito no formal</span><span class="pill">Centro de entrenamiento</span></div>
+<p class="muted">Una propuesta para desarrollar pensamiento crítico frente a los contenidos sobre ejercicio físico que circulan en internet.</p>
+</div>
+<div class="hero-card">
+<div><span class="tag">CIUDADANÍA DIGITAL</span><p class="muted">No todo lo que parece profesional en redes está comprobado.</p></div>
+<div><div class="stat">01</div><h3>Mirar · Preguntar · Verificar</h3><p class="muted">Tres acciones para consumir información deportiva de manera responsable.</p></div>
+</div>
+</section>
+
+<section id="tema">
+<div class="kicker">01 · Fundamentación</div><h2>¿Por qué hablar de desinformación en el deporte?</h2>
+<p class="lead">Instagram, TikTok y YouTube acercan rutinas, consejos y recomendaciones a millones de personas. El problema aparece cuando se presenta como verdad una afirmación sin evidencia, sin contexto o sin considerar las diferencias entre deportistas.</p>
+<div class="grid">
+<div class="card"><div class="number">01</div><h3>Información sin contexto</h3><p>Una rutina que funciona para una persona no necesariamente es adecuada para todas.</p></div>
+<div class="card"><div class="number">02</div><h3>Promesas exageradas</h3><p>Se difunden métodos y productos que prometen resultados rápidos o garantizados.</p></div>
+<div class="card"><div class="number">03</div><h3>Autoridad aparente</h3><p>La cantidad de seguidores o una edición atractiva no garantizan que una publicación sea confiable.</p></div>
+<div class="card"><div class="number">04</div><h3>Decisiones de entrenamiento</h3><p>Creer y compartir información dudosa puede influir en hábitos, expectativas y decisiones sobre el cuerpo.</p></div>
+</div>
+<div class="callout"><b>Propósito:</b> promover una actitud crítica y responsable al buscar, interpretar y compartir información vinculada con la actividad física.</div>
+</section>
+
+<section id="contenidos">
+<div class="kicker">02 · Contenidos</div><h2>¿Qué buscamos aprender?</h2>
+<div class="grid">
+<div class="card"><h3>Desinformación</h3><p>Reconocer afirmaciones falsas, engañosas o presentadas sin contexto.</p></div>
+<div class="card"><h3>Pensamiento crítico</h3><p>Hacer preguntas antes de aceptar una recomendación como verdadera.</p></div>
+<div class="card"><h3>Fuentes confiables</h3><p>Revisar quién publica, qué evidencia presenta y si otras fuentes serias lo respaldan.</p></div>
+<div class="card"><h3>Responsabilidad digital</h3><p>Evitar compartir contenidos dudosos y considerar el efecto que pueden tener en otras personas.</p></div>
+</div>
+</section>
+
+<section id="grupos">
+<div class="kicker">03 · Destinatarios</div><h2>Dos grupos posibles de intervención</h2>
+<p class="muted">La propuesta contempla dos perfiles del ámbito no formal. Las actividades se presentan como planificación didáctica; no se afirma que hayan sido realizadas con estos grupos.</p>
+<div class="grid">
+<div class="card"><span class="tag">GRUPO 1</span><h3 style="margin-top:14px">Atletas de alto rendimiento</h3><p>Deportistas que entrenan sistemáticamente y pueden encontrarse con recomendaciones digitales sobre preparación física, recuperación, nutrición y rendimiento.</p></div>
+<div class="card"><span class="tag">GRUPO 2</span><h3 style="margin-top:14px">Personas que entrenan de manera recreativa</h3><p>Asistentes a un gimnasio que suelen consultar redes sociales para incorporar ejercicios, rutinas o métodos a su práctica.</p></div>
+</div>
+</section>
+
+<section id="actividades">
+<div class="kicker">04 · Plan de actividades</div><h2>Aprender jugando y moviéndose</h2>
+<p class="muted">Seleccioná cada actividad para ver su desarrollo.</p>
+<div class="activity-tabs">
+<button class="selected" onclick="showActivity(1,this)">Actividad 1 · Verdadero o falso</button>
+<button onclick="showActivity(2,this)">Actividad 2 · Detectives digitales</button>
+</div>
+<div class="activity show card" id="act1">
+<span class="tag">GRUPO 1 · ATLETAS</span><h3 style="margin-top:14px">Verdadero o falso en movimiento</h3>
+<p class="muted">Objetivo: analizar mitos frecuentes sobre el entrenamiento y justificar las respuestas.</p>
+<div class="steps"><div class="step"><b>1 · Preparar</b>Colocar dos carteles en extremos opuestos: VERDADERO y FALSO.</div><div class="step"><b>2 · Jugar</b>Leer una afirmación. Cada participante se desplaza hacia la opción que considera correcta.</div><div class="step"><b>3 · Reflexionar</b>Pedir argumentos y explicar cómo verificar la información.</div></div>
+<h3 style="margin-top:22px">Afirmaciones para debatir</h3>
+<ul><li>«Cuanto más transpirás, más grasa perdés».</li><li>«Entrenar todos los días siempre es mejor que descansar».</li><li>«Tomar suplementos es indispensable para ganar masa muscular».</li></ul>
+<p><b>Materiales:</b> dos carteles y espacio libre para desplazarse.</p>
+<p><b>Cierre:</b> conversar sobre por qué una publicación en redes no alcanza para demostrar que una afirmación es verdadera.</p>
+</div>
+<div class="activity card" id="act2">
+<span class="tag">GRUPO 2 · ENTRENAMIENTO RECREATIVO</span><h3 style="margin-top:14px">Detectives de la información</h3>
+<p class="muted">Objetivo: identificar señales de desinformación y practicar la verificación de contenidos.</p>
+<div class="steps"><div class="step"><b>1 · Preparar</b>Presentar tarjetas con publicaciones ficticias sobre ejercicios, suplementos y resultados físicos.</div><div class="step"><b>2 · Resolver</b>En equipos, realizar un pequeño recorrido entre conos para acceder a una tarjeta y analizarla.</div><div class="step"><b>3 · Justificar</b>Clasificar el contenido como confiable, dudoso o falso y explicar qué habría que verificar.</div></div>
+<h3 style="margin-top:22px">Preguntas para investigar</h3>
+<ul><li>¿Quién creó la publicación?</li><li>¿Presenta evidencia o solamente promete resultados?</li><li>¿La recomendación sirve para todas las personas?</li><li>¿Podemos encontrar la misma información en fuentes confiables?</li></ul>
+<p><b>Materiales:</b> tarjetas impresas, conos y espacio de desplazamiento.</p>
+<p><b>Cierre:</b> recordar que verificar antes de compartir también es una forma de cuidar a los demás.</p>
+</div>
+</section>
+
+<section id="registro">
+<div class="kicker">05 · Registro audiovisual</div><h2>Mi contexto de trabajo</h2>
+<p class="lead">El siguiente registro muestra el espacio de entrenamiento en el que desarrollo mi actividad laboral. Permite contextualizar el ámbito no formal desde el cual surge esta propuesta.</p>
+<div class="card">
+<video controls playsinline preload="metadata">
+<source src="assets/registro_gimnasio.mp4" type="video/mp4">
+Tu navegador no puede reproducir este video.
+</video>
+<p class="note">Registro audiovisual aportado para contextualizar el espacio de trabajo. No se presenta como evidencia de la realización de las dos actividades didácticas.</p>
+</div>
+</section>
+
+<section id="experiencias">
+<div class="kicker">06 · Informes de experiencia</div><h2>Adaptación a la realidad laboral</h2>
+<div class="callout"><b>Alcance de esta entrega:</b> las dos actividades anteriores constituyen una propuesta de intervención. No se realizaron como clases grupales, por lo que no corresponde presentar resultados, participación ni aprendizajes observados como si hubieran ocurrido.</div>
+<details><summary>Informe 1 · Grupo de atletas de alto rendimiento</summary><p>La actividad «Verdadero o falso en movimiento» fue diseñada para un grupo de atletas de alto rendimiento. Busca recuperar conocimientos previos, generar intercambio y problematizar afirmaciones que circulan en redes sociales. Su implementación requiere reunir al grupo en un mismo momento, condición que no forma parte de la modalidad habitual de trabajo personalizado.</p></details>
+<details><summary>Informe 2 · Grupo de entrenamiento recreativo</summary><p>La actividad «Detectives de la información» fue pensada para personas que concurren a un gimnasio. Propone resolver desafíos breves en equipo y analizar publicaciones ficticias. Su puesta en práctica también requiere un grupo disponible para participar simultáneamente, algo que no pude organizar dentro de mis tiempos y modalidad laboral.</p></details>
+</section>
+
+<section id="reflexion">
+<div class="kicker">07 · Autoevaluación</div><h2>Reflexión final</h2>
+<p class="lead">La elaboración de este proyecto me permitió reconocer la importancia de la Educación Digital dentro del ámbito deportivo.</p>
+<div class="card">
+<p>En el trabajo cotidiano como profesional de la Educación Física, muchas veces se priorizan los aspectos físicos y técnicos del entrenamiento. Sin embargo, las redes sociales también influyen en las decisiones de los deportistas: qué ejercicios realizan, qué métodos prueban y qué expectativas construyen sobre sus resultados.</p>
+<p>Considero que aprender a identificar información falsa, reconocer fuentes confiables y desarrollar pensamiento crítico son herramientas importantes para entrenar de manera responsable.</p>
+<p>La principal dificultad fue adaptar la consigna a mi contexto laboral, ya que trabajo de manera personalizada con atletas y no dispongo de un grupo estable al que pueda reunir para desarrollar una clase colectiva. Por este motivo, pude elaborar las dos propuestas didácticas, pero no concretar las experiencias grupales solicitadas.</p>
+<p>Como aprendizaje, me llevo la posibilidad de relacionar los contenidos de Ciudadanía Digital con situaciones reales de mi profesión y de pensar estrategias para trabajarlos en espacios de educación no formal.</p>
+</div>
+</section>
+
+<section id="fuentes">
+<div class="kicker">08 · Criterios de verificación</div><h2>Antes de creer y compartir</h2>
+<div class="grid">
+<div class="card"><h3>Identificar al autor</h3><p>¿Quién publica? ¿Tiene formación o experiencia pertinente para hablar del tema?</p></div>
+<div class="card"><h3>Buscar evidencia</h3><p>¿La publicación explica de dónde sale la información o solo promete resultados?</p></div>
+<div class="card"><h3>Contrastar</h3><p>¿Otras fuentes profesionales y confiables sostienen la misma afirmación?</p></div>
+<div class="card"><h3>Revisar el contexto</h3><p>¿La recomendación considera edad, experiencia, objetivos y situación de cada persona?</p></div>
+</div>
+<p class="note">Bibliografía para completar antes de la defensa: materiales y apuntes del Crédito de Ciudadanía Digital; recursos oficiales de alfabetización mediática y fuentes científicas o institucionales sobre actividad física y entrenamiento. Se recomienda incorporar las referencias específicas trabajadas durante la cursada.</p>
+</section>
+</main>
+<footer>Juan Ignacio Ojeda · Crédito de Ciudadanía Digital · Proyecto aplicado al ámbito del entrenamiento deportivo</footer>
+<script>
+function showActivity(n,btn){
+ document.querySelectorAll('.activity').forEach(x=>x.classList.remove('show'));
+ document.getElementById('act'+n).classList.add('show');
+ document.querySelectorAll('.activity-tabs button').forEach(x=>x.classList.remove('selected'));
+ btn.classList.add('selected');
+}
+const links=[...document.querySelectorAll('nav a')];
+const sections=links.map(a=>document.querySelector(a.getAttribute('href'))).filter(Boolean);
+window.addEventListener('scroll',()=>{let current='';sections.forEach(s=>{if(window.scrollY>=s.offsetTop-130)current=s.id});links.forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+current))});
+</script>
+</body></html>
